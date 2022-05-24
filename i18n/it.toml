@@ -4,19 +4,19 @@
 [posts]
 
 [posts.title]
-other = "Posts"
+other = "Articoli"
 
 [posts.date]
-other = "Jan 2, 2006"
+other = ":date_medium"
 
 
 [post]
 
 [post.created]
-other = "January 2, 2006"
+other = ":date_long"
 
 [post.updated]
-other = "Updated January 2, 2006"
+other = "Aggiornato il :date_long"
 
 [toc]
-other = "Table of Contents"
+other = "Indice"

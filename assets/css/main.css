@@ -58,6 +58,10 @@ header#banner nav ul li a {
     color: #454545;
 }
 
+header#banner nav #languages {
+		float: right;
+}
+
 main#content a {
     color: #007dfa;
     text-decoration: none;

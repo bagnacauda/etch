@@ -7,6 +7,11 @@
                 {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
             </li>
             {{- end }}
-        </ul>
-    </nav>
+		</ul>
+		<ul id='languages'>
+			{{ range .Site.Home.AllTranslations }}
+			<li><a href="{{ .Permalink }}">{{ .Language.Lang }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
 </header>

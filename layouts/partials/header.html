@@ -9,7 +9,7 @@
             {{- end }}
 		</ul>
 		<ul id='languages'>
-			{{ range .Site.Home.AllTranslations }}
+			{{ range .Page.Translations }}
 			<li><a href="{{ .Permalink }}">{{ .Language.Lang }}</a></li>
 			{{ end }}
 		</ul>

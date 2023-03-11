@@ -27,6 +27,11 @@
     {{ $css := $resources | resources.Concat "css/style.css" | minify }}
     {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
+	{{ if .Site.Params.goatcounter -}}
+	<script data-goatcounter="https://{{ .Site.Params.goatcounter}}/count"
+        async src="//gc.zgo.at/count.js"></script>
+	{{ end -}}
+
     <link rel="canonical" href="{{ .Permalink }}" />
     <title>{{ .Title }}</title>
 </head>
